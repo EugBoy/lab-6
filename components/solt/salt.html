@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обессоливание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>АРМ установок комплексной подготовки нефти</h1>
+        <div id="nav">
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li><a href="../water/water.html">Обезвоживание</a></li>
+                <li><a href="#">Обессоливание</a></li>
+                <li><a href="../stabilisation/stabilisation.html">Стабилизация</a></li>
+                <li><a href="../finish/finish.html">Завершить процесс</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="action">
+        <button id="startButton">Начать процесс</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+       document.getElementById('startButton').onclick = function() {
+            document.getElementById('message').textContent = 'Валидация данных';
+            setTimeout(function() {
+                document.getElementById('message').textContent = 'Процесс выполняется';
+            }, 2000);
+            setTimeout(function() {
+                document.getElementById('message').textContent = 'Добавление антисолевых катализаторов';
+            }, 4000);
+            setTimeout(function() {
+                document.getElementById('message').textContent = 'Сбор данных с датчиков о \n содержании соли в нефти';
+            }, 6000);
+            setTimeout(function() {
+                document.getElementById('message').textContent = 'Подготовка к завершению процесса';
+            }, 8000);
+            setTimeout(function() {
+                document.getElementById('message').textContent = 'Составление отчёта';
+            }, 10000);
+            setTimeout(function() {
+                document.getElementById('message').textContent = 'Процесс закончен';
+            }, 12000);
+        }
+    </script>
+    <div id="footer">
+        <p>Контакты: superARM@yandex.ru</p>
+        <p>Copyright © superARM.ru, 2024</p>
+    </div>
+</body>
+</html>
